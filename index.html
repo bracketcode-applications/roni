@@ -1,7 +1,9 @@
 <!--
     * Basic HTML + CSS Webpage - Code-name: Roni
+    * Developed By: Albert Nera
     * Initial Release: 02-04-21
-    * 
+    * Last Updated: 02-09-21 
+    * Additional Reference: https://github.com/techmanager/roni
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -24,11 +26,34 @@
     </head>
     <body>
         <div class="header" id="header">
-            <h1>My Website Name</h1>
+            <h1><img height="30px;" src="img/logo.png" />My Website Name</h1>
         </div>
+        <div class="nav" id="navbar">
+            <!--The hashtag # followed by ID name is used to direct user to the relevant section of the page. In a multipage website add the page url to href.-->
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right"><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="hero" id="hero">
+            <div class="hero-text">
+                <h1 style="font-size:50px">Welcome</h1>
+                <p>This is my personal website.</p>
+            </div>
+        </div> 
         <div class="main" id="main">
-            <h3>About</h3>
-            <p>Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <div class="about" id="about">
+                <h3>About</h3>
+                <p>Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <p>Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <p>Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+            <div class="contact" id="contact">
+                <h3>Contact Me</h3>
+                <p>You can contact me at: <a href="mailto:infoxyz@fakeremail.com">infoxyz@fakeremail.com</a></p>
+            </div>
         </div>
         <div class="footer" id="footer">
             <p class="m-0 text-white">Copyright &copy; MyWebsiteDomain.com
