@@ -4,6 +4,8 @@ Version: 0.5
 
 ## About
 Basic HTML+CSS website available for open use. The code is available under a standard MIT license. 
-Feel free to use code as you wish.
+Feel free to use code as you wish. 
+
+NOTE:: This is a work in progress, updates will be committed over time.
 
 
