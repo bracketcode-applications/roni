@@ -1,7 +1,7 @@
 # HTML+CSS Website Code - Codename: Roni
 Version: 1.0
 ## About
-Basic HTML+CSS website available for open use. The code is available under a standard MIT license. 
+Basic HTML+CSS website available for open use. The code is distributed under a standard MIT license. 
 Feel free to use code as you wish. 
 
 ## Preview
