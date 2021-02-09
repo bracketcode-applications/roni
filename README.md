@@ -1,11 +1,16 @@
 # HTML+CSS Website Code - Codename: Roni
-Version: 0.5
-![Preview](https://img.www-source.net/roni/roni-github-image.png)
+Version: 1.0
+![Preview](https://img.www-source.net/roni/roni-github-preview-0001.png)
 
 ## About
 Basic HTML+CSS website available for open use. The code is available under a standard MIT license. 
 Feel free to use code as you wish. 
 
-NOTE:: This is a work in progress, updates will be committed over time.
+## Updates
+- Added img directry wth graphic asset.
+- Added stand-in logo image.
+- Added Navigation bar
+- Added hero image
+- Increased content to 3 paragraphs
 
 
