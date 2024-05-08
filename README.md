@@ -5,7 +5,7 @@ Basic HTML+CSS website available for open use. The code is distributed under a s
 Feel free to use code as you wish. 
 
 ## Preview
-![Preview](https://img.www-source.net/roni/roni-github-preview-0001.png)
+![Preview](https://stagingproject.com/previews/ronni.png)
 **[View Live Preview](https://roni.stagingproject.com/)**
 
 
