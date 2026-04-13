@@ -1,0 +1,8 @@
+# Basing on the official nginx image that runs on Alpine Linux.
+FROM nginx:alpine
+
+# Copy your website files to nginx's default serve directory
+COPY . /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80

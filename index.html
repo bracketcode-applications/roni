@@ -1,66 +1,165 @@
-<!--
-    * Basic HTML + CSS Webpage - Code-name: Roni
-    * Developed By: Albert Nera
-    * Initial Release: 02-04-21
-    * Last Updated: 02-09-21 
-    * Additional Reference: https://github.com/techmanager/roni
--->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Add a brief description for your website here.">
-        <meta name="author" content="Website Owner Name">
-        <title>Website Title Goes Here</title>
-        <!-- Opengraph Meta Data -->
-        <meta property="og:title" content="Website Title Goes Here" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.yourwebsitedomain.com/" />
-        <meta property="og:image" content="https://www.yourwebsitedomain.com/social/card-image.jpeg" />
-        <meta property="og:description" content="Add a brief description for your website here. Same as standard meta description used previously." />
-        <!-- Link Favicon -->
-        <link rel="icon" type="image/x-icon" href="https://www.yourwebsitedomain.com/favicon.png" />
-        <!-- Link CSS -->
-        <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div class="header" id="header">
-            <h1><img height="30px;" src="img/logo.png" />My Website Name</h1>
-        </div>
-        <div class="nav" id="navbar">
-            <!--The hashtag # followed by ID name is used to direct user to the relevant section of the page. In a multipage website add the page url to href.-->
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li style="float:right"><a href="#">GitHub</a></li>
-            </ul>
-        </div>
-        <div class="hero" id="hero">
-            <div class="hero-text">
-                <h1 style="font-size:50px">Welcome</h1>
-                <p>This is my personal website.</p>
-            </div>
-        </div> 
-        <div class="main" id="main">
-            <div class="about" id="about">
-                <h3>About</h3>
-                <p>Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                <p>Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                <p>Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-            </div>
-            <div class="contact" id="contact">
-                <h3>Contact Me</h3>
-                <p>You can contact me at: <a href="mailto:infoxyz@fakeremail.com">infoxyz@fakeremail.com</a></p>
-            </div>
-        </div>
-        <div class="footer" id="footer">
-            <p class="m-0 text-white">Copyright &copy; MyWebsiteDomain.com
-                <script type="4fd349d31710e5e46f7d37fa-text/javascript">
-                    document.write(new Date().getFullYear());
-                </script>
-            </p>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roni-AI | Webpage Template</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navbar Styling */
+    nav {
+      background: #333;
+      color: white;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: #333;
+        margin-top: 1rem;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* Header Styling */
+    header {
+      background: url('img/header-background.jpg') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    /* Main Content Styling */
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    main h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      padding: 0.5rem 0;
+    }
+
+    /* Footer Styling */
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">My Website Name</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/bracketcode-applications/roni-ai">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Image Section -->
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="about">About Us</h2>
+    <p>
+      Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    </p>
+    <p>
+      Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    </p>
+    <p>
+      Wed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    </p>
+    <h2 id="contact">Contact</h2>
+    <p>
+      <a href="mailto:infoxyz@fakeremail.com">infoxyz@fakeremail.com</a>
+    </p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+  <!-- The current year is dynamically inserted via the inline script -->
+    &copy; <script>document.write(new Date().getFullYear())</script> Your Domain. All rights reserved.
+  </footer>
+
+  <!-- JavaScript for mobile toggle -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
 </html>
